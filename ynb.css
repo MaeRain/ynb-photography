@@ -1,0 +1,749 @@
+/*-------~~~TABLE OF CONTENTS~~~-------*/
+
+/*
+Website Wide Styles - 12
+Home Page Styles - 84
+About Section (shared between home and about page) - 102
+*/
+
+/*-------~~~WEBSITE WIDE STYLES~~~-------*/
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.mobileMenuContainer {
+    display: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 5em;
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+/*Head*/
+
+.head {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)), url(images/charlestonYNB.jpg) center;
+    background-size: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0; /*DONT TOUCH IT EFFECTS THE OTHER PAGES*/
+}
+
+.head h1 {
+    margin-top: 100px; /*FIXES HEAD ON OTHER PAGES - LOGO WAS PUSHING THEM OFF CENTER*/
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 200;
+    margin: 0 10px;
+    padding: 2px 0;
+    font-size: 1.5em;
+}
+
+#currentPage {
+    border-bottom: 3px solid #EDCACA;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #212121;
+    color: #666;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+/*might need to make images background images in order to put an overlay over them*/
+
+.footerImgDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerImg {
+    height: 250px;
+    width: 100%;
+    background: rgba(0, 0, 0, 1);
+}
+
+.footerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerCopyright h6 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.footerText {
+    padding: 30px;
+    text-align: center;
+}
+
+.footerLogo {
+    width: 80px;
+}
+
+/*-------~~~HOME PAGE STYLES~~~-------*/
+
+/*-------Head-------*/
+
+.headLogo {
+    width: 100px;
+    margin: 0 1em;
+    float: right;
+}
+
+.headTitle {
+    padding: 200px 0 125px 0;
+}
+
+.headTitle h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+.headTitle h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/*-------ABOUT SECTION (Home !!AND!! About Page)-------*/
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    margin: 4% 8% 4% 8%;
+}
+
+.about h2 {
+    font-family: "PT Serif";
+    color: #EDCACA;
+    align-self: flex-start;
+}
+
+.aboutGridItem {
+    align-self: center;
+}
+
+.aboutGridItem h3 {
+    color: #B88F90;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #aaa;
+    margin-top: .5em;
+}
+
+.aboutGridItem p {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #555;
+}
+
+.aboutTextImg1, .aboutTextImg2 {
+    background: linear-gradient(rgba(50,50,50,0.10), rgba(50,50,50,0.10)), url("images/gateWithVinesCropped.jpg") center;
+    background-size: cover;
+    height: 120px;
+    width: 100%;
+    /* background-color: palevioletred; */
+}
+
+.aboutTextImg1 {
+    background-position: top;
+}
+
+.aboutText {
+    margin: 2em 0;
+}
+
+.aboutGridItem img {
+    width: 100%;
+}
+
+/*--HOME PAGE Learn More--*/
+
+.learnMore {
+    text-align: center;
+}
+
+.learnMore h4 {
+    margin: 0 1em;
+    padding: .5em;
+    border-top: 2px solid #bbb;
+    color: #B88F90;
+    font-size: 2em;
+}
+
+.card h5 {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.learnMoreArrow {
+    font-size: 50px;
+}
+
+.learnMoreCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1% 3% 3% 3%;
+}
+
+.card {
+    margin: 5%;
+    padding: 60% 30%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.aboutCard {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(images/charlestonDoorway.jpg) no-repeat center;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+}
+
+.aboutCard:hover {
+    background: linear-gradient(rgba(30,30,30,0.31), rgba(30,30,30,0.31)),  url(images/charlestonDoorway.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.portfolioCard {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(images/ynbCharlestonLampost.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.portfolioCard:hover {
+    background: linear-gradient(rgba(30,30,30,0.31), rgba(30,30,30,0.31)),  url(images/ynbCharlestonLampost.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.contactCard {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(images/longwoodGardens.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.contactCard:hover {
+    background: linear-gradient(rgba(30,30,30,0.31), rgba(30,30,30,0.31)),  url(images/longwoodGardens.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+/*---ABOUT PAGE Social Media Icons---*/
+
+.socialMediaIcons {
+    text-align: center;
+    font-size: 30px;
+}
+
+.socialMediaIcons a {
+    margin: 5px;
+    color: #000;
+}
+
+.socialMediaIcons a:hover {
+    color: #aaa;
+}
+
+.socialMediaIcons a:visited {
+    color: #aaa;
+}
+
+/*-------~~~PORTFOLIO PAGE STYLES~~~-------*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    text-align: center;
+    /* margin: 1vw; */
+    margin: 1em 6em;
+}
+
+.galleryItem {
+    display: block;
+    /*margin: 2em 1em;*/
+    margin: 3vw 1.5vw;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.galleryLeft a {
+    padding: 60% 0;
+}
+
+.galleryRight a {
+    padding: 40% 0;
+}
+
+/*----background images----*/
+
+.weddingCover {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(ynbPortfolioGalleries/ynbWeddingImages/braxtons7.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.engagementCover {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(ynbPortfolioGalleries/ynbEngagementImages/ynbEngagement.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.maternityCover {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(ynbPortfolioGalleries/ynbMaternityImages/ynbMaternity10.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.graduationCover {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(ynbPortfolioGalleries/ynbGraduationImages/graduationSampleEdit.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.otherCover {
+    background: linear-gradient(rgba(34,34,34,0.41), rgba(34,34,34,0.41)),  url(images/autumnLeaves.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/*----------PORTFOLIO - PHOTO GALLERIES----------*/
+
+.photoGridHead {
+    margin: 1em;
+}
+
+.photoGridHead a {
+    text-decoration: none;
+    color: #989898;
+    font-size: 1.2em;
+}
+
+.photoGridHead a:hover {
+    color: #555;
+}
+
+.backArrow {
+    margin-right: .5em;
+}
+
+.photoGridHead h2 {
+    font-size: 3em;
+    color: #EDCACA;
+    text-align: center;
+    margin: 0 0 .8em 0;
+}
+  
+.photoGridTitle {
+    color: #989898;
+    border-bottom: 2px solid #D3D3D3;
+    margin: 1em;
+}
+
+.photoGridTitle h3 {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.photoGrid {
+    margin: 2em 5em;
+    column-count: 3;
+    column-gap: 0;
+    column-fill: balance; /*HUUUAAAAAAHHHHHH*/
+    /* height: 2000px; works until it doesn't */
+}
+
+.photoGridItem {
+    margin: 8px 10px;
+    display: inline-block;
+}
+  
+.photoGridItem img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+}
+
+/*----------CONTACT PAGE----------*/
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+    border-top: 2px solid #bbb;
+    padding-top: 30px;
+}
+
+.contactInfo {
+    margin: 0 2em;
+}
+
+.contactInfo h2 {
+    margin: 0;
+    font-family: "PT Serif", serif;
+    font-size: 2em;
+    color: #D59F57;
+}
+
+.contactInfo span {
+    border-top: 2px solid #bbb;
+    padding-top: 8px;
+}
+
+.contactForm {
+    margin-top: 30px;
+    /* margin-left:  */
+}
+
+
+/*----------!!!!!MEDIA QUERIES!!!!!----------*/
+
+/* 1206x508 */
+
+/* @media all and (max-width: 1206px) {
+    .galleryLeft, .galleryRight {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+} */
+
+/*----------HOME PAGE @MEDIAS----------*/
+
+@media screen and (max-width: 1200px) {
+    .aboutTextImg1 {
+        display: none;
+    }
+
+    .aboutTextImg2 {
+        display: none;
+    }
+
+    /*----PORTFOLIO PAGE----*/
+    
+    .gallery {
+        margin: 1vw;
+    }
+
+    /*----GALLERY PAGES----*/
+
+    .photoGrid {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+        /*----GLOBAL STYLES----*/
+        /*HAMBURGER MENU STYLES*/
+        
+    .navbar {
+      display: none;  
+    }
+
+    .mobileMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        position: relative; /*WATCH FOR UNEXPECTED EFFECTS*/
+        float: left; /*shrinks div to fit content*/
+    }
+
+    /*--Menu X Icon--*/
+
+    .menuIcon { /*menu-btn*/
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn { /*menu-button__burger*/
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn::before, .menuBtn::after { /*menu-button__burger::before/after*/
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn::before {
+        transform: translateY(-16px);
+    }
+
+    .menuBtn::after {
+        transform: translateY(16px);
+    }
+
+    /* ANIMATION */
+    .open .menuIcon {
+        z-index: 1;
+    }
+
+    .open .menuBtn {
+        transform: translate(-70px);
+        background: transparent;
+        box-shadow: none;
+        background: #888;
+    }
+
+    .open .menuBtn::before {
+        transform: rotate(45deg) translate(50px, -50px);
+        background: #888;
+        box-shadow: none;
+    }
+
+    .open .menuBtn::after {
+        transform: rotate(-45deg) translate(50px, 50px);
+        background: #888;
+        box-shadow: none;
+    }
+
+    /*--Menu Items--*/
+
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        /* top: 75px; */
+        top: 0px;
+        padding-top: 80px; /*EXTRA SPACE TO COVER BUTTON*/
+        transition: all .5s ease-in-out;
+        transform: translate(-300px);
+        position: absolute;
+        text-align: left;
+        color: #888;
+        list-style: none;
+        background-color:  #fff;
+        text-transform: uppercase;
+    }
+    
+    .menuItems a {
+        border-top: 2px solid #eee;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 200;
+        color: #888;
+    }
+    
+    .menuItems a:hover {
+        background-color: #eee;
+        transition: all .1s ease-in-out;
+    }
+
+    .menuItems a:visited {
+        color: #888;
+    }
+    
+    /* ANIMATION */
+
+    .open .menuItems {
+        transform: translate(0px);
+    }
+
+    /*FOOTER STYLES*/
+
+    .footerImg {
+        height: 200px;
+    }
+    
+    /*Page Heads - Global Fix*/
+
+    .head h1 {
+        padding-top: 35px;
+    }
+
+
+        /*----HOME Page----*/
+
+    .headLogo {
+        margin: 1em;
+    }
+
+    .homePageHead {
+        padding-top: 0;
+    }
+
+    .headTitle {
+        padding: 150px 0 100px 0;
+    }
+
+        /*----HOME and ABOUT Page----*/
+        
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutText {
+        margin-bottom: 4em;
+    }
+
+    .aboutText h3 {
+        margin: .5em 0;
+    }
+
+    .aboutGridItem img {
+        max-width: 450px;
+        margin-bottom: 2em;
+    }
+
+        /*learnMore*/
+
+    .learnMore h4 {
+        padding: .5em 0 0 0;
+    }
+
+    .learnMoreCards {
+        display: flex;
+        flex-direction: column;
+        margin: 5% 10% 8% 10%;
+    }
+
+    .card {
+        padding: 30%;
+        margin: 0;
+        font-size: 3em;
+    }
+
+    /*----CONTACT PAGE STYLES----*/
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contactForm {
+        margin: 2em;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    /*----HOME PAGE STYLES----*/
+
+    .headLogo {
+        width: 70px;
+        margin-bottom: 0;
+    }
+
+    .headTitle {
+        padding: 100px 0 62px 0;
+    }
+    
+    .headTitle h1 {
+        font-size: 4em;
+    }
+    
+    .headTitle h2 {
+        font-size: 2em;
+    }
+
+    /*----PORTFOLIO PAGE STYLES----*/
+
+    .photoGrid {
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /*----GLOBAL STYLES----*/
+
+    .footerImg {
+        height: 180px;
+    }
+
+    /*----HOME PAGE STYLES----*/
+
+    .headTitle {
+        padding: 100px 0 30px 0;
+        font-size: .9em;
+    }
+
+    .aboutText h3 {
+        font-size: 2.2em;
+    }
+
+    .learnMoreCards a {
+        font-size: 2.5em;
+    }
+
+     /*----PORTFOLIO PAGE STYLES----*/
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+
+    .galleryLeft a {
+        padding: 40% 0;
+    }
+
+    .galleryItem {
+        margin: 5vw 8vw;
+    }
+
+    .engagementCover {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+/*----SITE-WIDE STYLES----*/
+    /*--Head--*/
+    /*--Footer--*/
+
+/*----HOME----*/
+    /*--Head--*/
+    /*--About--*/
+    /*--Learn More--*/
+
+/*----PORTFOLIO----*/
+/*--Galleries--*/
+
+/*----ABOUT----*/
+/*--About--*/
+
+/*----CONTACT----*/
+/*--Contact--*/
+
+/*----MEDIA QUERIES----*/
+
+
+

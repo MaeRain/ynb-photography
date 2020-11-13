@@ -1,0 +1,112 @@
+/*HAMBURGER MENU STYLES*/
+
+/* .mobileMenuContainer {
+    display: none;
+}
+
+@media all and (max-width: 1000px) {
+    .navbar {
+      display: none;  
+    }
+
+    .mobileMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        position: relative;
+    }
+
+    .menuIcon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn::before, .menuBtn::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menuBtn::before {
+        transform: translateY(-16px);
+    }
+
+    .menuBtn::after {
+        transform: translateY(16px);
+    }
+
+    .open .menuBtn {
+        transform: translate(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .open .menuBtn::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .open .menuBtn::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        top: 75px;
+        transition: all .5s ease-in-out;
+        transform: translate(-300px);
+        text-align: left;
+        color: #888;
+        list-style: none;
+        background-color:  #fff;
+        text-transform: uppercase;
+        position: absolute;
+    }
+    
+    .menuItems a {
+        border-top: 2px solid #eee;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 200;
+    }
+    
+    .menuItems a:hover {
+        background-color: #eee;
+        transition: all .1s ease-in-out;
+    }
+
+    .menuItems a:visited {
+        color: #888;
+    }
+
+    .open .menuItems {
+        transform: translate(0px);
+    }
+
+}
+
+ */
+
